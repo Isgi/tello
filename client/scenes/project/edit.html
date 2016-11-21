@@ -1,0 +1,17 @@
+<template  name="ProjectEdit">
+  <div class="content">
+    <div class="box">
+      <div class="box-body">
+        {{#autoForm collection="Project" doc=dataUpdate id="updateProject" type="update"}}
+          <fieldset>
+            <legend>Edit Project</legend>
+            {{> afQuickField name='name'}}
+          </fieldset>
+          <button type="submit" class="btn btn-primary">Update</button>
+          <button type="button" onClick="{{handleDelete}}" name="button" class="btn btn-danger">Delete</button>
+        {{/autoForm}}
+        <br>
+      </div>
+    </div>
+  </div>
+</template>

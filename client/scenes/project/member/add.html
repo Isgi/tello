@@ -1,0 +1,24 @@
+<template name="MemberAdd">
+  <div class="content">
+    <div class="box">
+      <div class="box-body">
+        <form class="main form page" onSubmit="{{handleSubmit}}" >
+          <div class="col-sm-6 col-sm-offset-3" >
+            <div class="form-group">
+              <label class="control-label" for="name">Member Name</label>
+              <div class="controls">
+                <select class="form-control" name="userId">
+                  <option value="">Pilih member</option>
+                  {{#each users}}
+                    <option value="{{_id}}">{{profile.name}}</option>
+                  {{/each}}
+                </select>
+              </div>
+            </div>
+            <input type="submit" value="Submit" class="btn btn-primary"/>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>

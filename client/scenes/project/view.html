@@ -1,0 +1,15 @@
+<template name="ProjectView">
+  <div class="content">
+    <div class="box">
+      <div class="box-body">
+      {{> CybermantraListView
+        columns=columnsProject
+        dataProvider=dataProviderProject
+      }}
+      <br>
+      <a href="/list/insert/{{_id}}"><button type="button" class="btn btn-primary">Create List</button></a>
+      {{> ListIndex}}
+      </div>
+    </div>
+  </div>
+</template>

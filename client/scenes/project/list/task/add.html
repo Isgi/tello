@@ -1,0 +1,15 @@
+<template name="TaskAdd">
+  <div class="content">
+    <div class="box">
+      <div class="box-body">
+        {{#autoForm collection="Task" id="insertTask" type="insert"}}
+          <fieldset>
+            <legend>Add Task</legend>
+            {{> afQuickField name='name'}}
+          </fieldset>
+          <button type="submit" class="btn btn-primary">Insert</button>
+        {{/autoForm}}
+      </div>
+    </div>
+  </div>
+</template>
